@@ -49,3 +49,6 @@ app.*.map.json
 
 # For enviroment variables
 .env
+
+# For secrets
+secrets.json
