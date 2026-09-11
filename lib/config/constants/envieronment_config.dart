@@ -7,7 +7,7 @@ class EnvieronmentConfig {
     defaultValue: '',
   );
 
-  static bool get isValid {
+  static bool get isConfigured {
     return tmdbApiKey.isNotEmpty;
   }
 }

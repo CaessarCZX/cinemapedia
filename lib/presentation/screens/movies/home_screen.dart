@@ -1,3 +1,4 @@
+import 'package:cinemapedia/config/constants/envieronment_config.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -7,9 +8,10 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final apiExposed = EnvieronmentConfig.tmdbApiKey;
     return Scaffold(
       appBar: AppBar(title: Text('Home Screen')),
-      body: Placeholder(),
+      body:Center(child: Text(apiExposed)),
     );
   }
 }
