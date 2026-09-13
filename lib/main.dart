@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import 'package:cinemapedia/config/constants/envieronment_config.dart';
 import 'package:cinemapedia/config/router/app_router.dart';
 import 'package:cinemapedia/config/theme/app_theme.dart';
-import 'package:cinemapedia/config/constants/envieronment_config.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   _validateEnvironment();
-  runApp(const MainApp());
+  runApp(ProviderScope(child: const MainApp()));
 }
 
 class MainApp extends StatelessWidget {
