@@ -46,8 +46,8 @@ class MovieFromMoviedb {
         popularity: json["popularity"]?.toDouble(),
         posterPath: json["poster_path"] ?? '',
         releaseDate: DateTime.parse(json["release_date"]),
-        softcore: json["softcore"],
-        video: json["video"],
+        softcore: json["softcore"] ?? '',
+        video: json["video"] ?? '',
         voteAverage: json["vote_average"]?.toDouble(),
         voteCount: json["vote_count"],
     );

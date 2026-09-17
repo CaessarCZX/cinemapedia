@@ -1,4 +1,3 @@
-import 'package:cinemapedia/domain/entities/movie.dart';
 import 'package:cinemapedia/domain/repositories/movies_repository.dart';
 import 'package:cinemapedia/presentation/providers/movies/movie_list_state/movie_list_state.dart';
 import 'package:cinemapedia/presentation/providers/movies/movies_repository_provider/movies_repository_provider.dart';
